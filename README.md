@@ -28,3 +28,5 @@ Then display the app icon in homepage and open the app upon clicking on the icon
 6. Given a user has selected a particular city
 When the user clicks on "Show Events Calendar"
 Then display a calendar view with the upcoming events for the next 14 days
+
+Serverless functions will be used (AWS Lambda) to interact with the authorisation server and the calendar API.
