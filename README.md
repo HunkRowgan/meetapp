@@ -1,16 +1,11 @@
 #meetapp - an events based serverless App built in React (Create-React-App) which allows users to find  events in different cities. The application uses the Google Calendar API to fetch upcoming events.
 
 ##User Stories:
-2. As a user, I would like to be able to show/hide event details so that I can see more/less
-information about an event.
-3. As a user, I would like to be able to specify the number of events I want to view in the app so
-that I can see more or fewer events in the events list at once.
-4. As a user, I would like to be able to use the app when offline so that I can see the events I
-viewed the last time I was online.
-5. As a user, I would like to be able to add the app shortcut to my home screen so that I can
-open the app faster.
-6. As a user, I would like to be able to see a chart showing the upcoming events in each city so
-that I know what events are organized in which city.
+2. As a user, I would like to be able to show/hide event details so that I can see more/less information about an event.
+3. As a user, I would like to be able to specify the number of events I want to view in the app so that I can see more or fewer events in the events list at once.
+4. As a user, I would like to be able to use the app when offline so that I can see the events I viewed the last time I was online.
+5. As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster.
+6. As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city.
 
 ##Scenarios:
 2. Given a user has loaded event details for a particular city
