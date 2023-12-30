@@ -1,9 +1,12 @@
-import { useState } from "react";
+//This is where the user will select a city from the list of suggestions.
 
-const CitySearch = ({ allLocations }) => {
+import { useEffect, useState } from "react";
+
+const CitySearch = ({ allLocations, setCurrentCity }) => { //extract function props (allLocations, setCurrentCity)
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
@@ -19,7 +22,12 @@ const CitySearch = ({ allLocations }) => {
     const value = event.target.textContent;
     setQuery(value);
     setShowSuggestions(false); // to hide the list
+    setCurrentCity(value); // 
   };
+
+  useEffect(() => {
+    setSuggestions(allLocations); 
+  }, [`${allLocations}`]); // allLocations as stringified dependancy of useEffect -> if deps change, then re-render effect function
 
   return (
     <div id="city-search">
@@ -44,6 +52,6 @@ const CitySearch = ({ allLocations }) => {
       }
     </div>
  )
-}
+} 
 
 export default CitySearch;

@@ -1,3 +1,5 @@
+//This will render a list of events that take place in the city the user has selected.
+
 import Event from './Event';
 
 const EventList = ({ events }) => {
