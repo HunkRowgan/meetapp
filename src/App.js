@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     fetchData(); // call fetchData in useEffect
-  }, [currentCity]); //useEffect called whenever dependency currentCity changes
+  }, [currentCity, currentNOE]); //useEffect called whenever dependency currentCity, currentNOE changes
 
   const fetchData = async () => {
     const allEvents = await getEvents();
@@ -33,11 +33,11 @@ const App = () => {
 
  return (
    <div className="App">
-     <NumberOfEvents />
-     <CitySearch
+    <CitySearch
      allLocations={allLocations}
      setCurrentCity={setCurrentCity}
      /> //pass allLocations state as prop to CitySearch component
+     <NumberOfEvents setCurrentNOE={setCurrentNOE}/>
      <EventList
      events={events}
      /> //pass events state as prop to EventList
