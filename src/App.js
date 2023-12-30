@@ -35,8 +35,8 @@ const App = () => {
    <div className="App">
     <CitySearch
      allLocations={allLocations}
-     setCurrentCity={setCurrentCity}
-     /> //pass allLocations state as prop to CitySearch component
+     setCurrentCity={setCurrentCity} //pass allLocations state as prop to CitySearch component
+     />
      <NumberOfEvents setCurrentNOE={setCurrentNOE}/>
      <EventList
      events={events}

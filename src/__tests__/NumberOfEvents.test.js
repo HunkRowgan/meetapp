@@ -6,7 +6,7 @@ describe ('<NumberOfEvents/> component', () => {
    let NumberOfEventsComponent
 
    beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents setNumber={() => {}} />)
+    NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={() => {}} />)
    })
 
    test('has input field', () => {
