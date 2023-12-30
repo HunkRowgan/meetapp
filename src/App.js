@@ -39,8 +39,8 @@ const App = () => {
      />
      <NumberOfEvents setCurrentNOE={setCurrentNOE}/>
      <EventList
-     events={events}
-     /> //pass events state as prop to EventList
+     events={events} //pass events state as prop to EventList
+     /> 
    </div>
  );
 }
