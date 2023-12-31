@@ -8,11 +8,11 @@ const Event = ({event}) => {
 
 
    return (
-   <li>
+   <li id='list-item'>
       <h2>{event.summary}</h2>
       <p>{event.location}</p>
 
-      <button onClick={() => {
+      <button className="details-btn" onClick={() => {
          setshowDetails(!showDetails)
       }}>{showDetails ? 'Hide details' : 'Show details'}</button>
 

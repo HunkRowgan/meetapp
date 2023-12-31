@@ -6,7 +6,7 @@ const NumberOfEvents = ({ setCurrentNOE }) => {
 
     return (
         <div id="number-of-events">
-            <input type="text" defaultValue="32" onChange={handleInputChanged}/>
+            <input type="text" defaultValue="32" className="number-input" onChange={handleInputChanged}/>
         </div>
     )
 }
