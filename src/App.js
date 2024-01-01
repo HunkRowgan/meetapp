@@ -4,6 +4,7 @@
 import CitySearch from './components/CitySearch';
 import EventList from './components/EventList';
 import NumberOfEvents from './components/NumberOfEvents';
+import { InfoAlert, ErrorAlert } from './components/Alert';
 import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
 import './App.css';
@@ -16,6 +17,8 @@ const App = () => {
   const [currentNOE, setCurrentNOE] = useState(32);
   const [allLocations, setAllLocations] = useState([]); // create allLocations state
   const [currentCity, setCurrentCity] = useState("See all cities"); //create currentCity state
+  const [infoAlert, setInfoAlert] = useState("");
+  const [errorAlert, setErrorAlert] = useState("");
 
   useEffect(() => {
     fetchData(); // call fetchData in useEffect
@@ -33,11 +36,19 @@ const App = () => {
 
  return (
    <div className="App">
+    <div className="alerts-container">
+        {infoAlert.length ? <InfoAlert text={infoAlert}/> : null}
+        {errorAlert.length ? <ErrorAlert text={errorAlert}/> : null}    {/* this is a comment in jsx*/}
+      </div>
     <CitySearch
      allLocations={allLocations}
      setCurrentCity={setCurrentCity} //pass allLocations state as prop to CitySearch component
+     setInfoAlert={setInfoAlert}
      />
-     <NumberOfEvents setCurrentNOE={setCurrentNOE}/>
+     <NumberOfEvents
+     setCurrentNOE={setCurrentNOE}
+     setErrorAlert={setErrorAlert}
+     />
      <EventList
      events={events} //pass events state as prop to EventList
      /> 

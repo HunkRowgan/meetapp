@@ -90,6 +90,14 @@ li {
   padding: 10px 15px;
 }
 
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
+
 @media (max-width: 768px) {
   .charts-container {
     display: grid;
