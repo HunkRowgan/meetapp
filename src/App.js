@@ -4,6 +4,7 @@
 import CitySearch from './components/CitySearch';
 import EventList from './components/EventList';
 import NumberOfEvents from './components/NumberOfEvents';
+import CityEventsChart from './components/CityEventsChart';
 import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
 import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
@@ -55,6 +56,10 @@ const App = () => {
      <NumberOfEvents
      setCurrentNOE={setCurrentNOE}
      setErrorAlert={setErrorAlert}
+     />
+     <CityEventsChart
+     allLocations={allLocations}
+     events={events}
      />
      <EventList
      events={events} //pass events state as prop to EventList
