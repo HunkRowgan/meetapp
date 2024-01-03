@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
-  background-color: #f4f1de;
-  font-family: 'Poppins', sans-serif;  
-  color: #3d405b;
+  background-color: #f0f5f9; /* Light blue */
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a; /* Black */
   margin: 1rem;
 }
 
@@ -13,36 +13,39 @@ li {
 
 .details-btn {
   border: none;
-  background-color: #e07a5f;
+  background-color: #2a4d69; /* Dark blue */
   padding: 10px 15px;
   border-radius: 10px;
-  color: #f4f1de;
+  color: #f0f5f9; /* Light blue */
   font-size: medium;
 }
 
-.city, .number-input{
+.city,
+.number-input {
   margin-top: 10px;
   outline: none;
   border: none;
-  border-bottom: #81b29a solid 1.5px;
+  border-bottom: #1a1a1a solid 1.5px; /* Black */
   padding: 5px 10px;
   font-family: inherit;
-  background-color: #f4f1de;
-  color: #3d405b;
+  background-color: #f0f5f9; /* Light blue */
+  color: #1a1a1a; /* Black */
   font-size: medium;
 }
 
-.city::placeholder{
-  color: #3d405b;
+.city::placeholder {
+  color: #1a1a1a; /* Black */
 }
 
-.city:focus, .number-input:focus {
-   border: none;
-   border-bottom: #e07a5f solid 1.5px;
-   transition: all 0.2s ease-in-out;
+.city:focus,
+.number-input:focus {
+  border: none;
+  border-bottom: #2a4d69 solid 1.5px; /* Dark blue */
+  transition: all 0.2s ease-in-out;
 }
 
-#city-search, #number-of-events{
+#city-search,
+#number-of-events {
   position: relative;
   text-align: center;
 }
@@ -54,9 +57,9 @@ li {
   right: 0;
   z-index: 5;
   padding: 15px;
-  background-color: #81b29a;
+  background-color: #3d5a80; /* Medium blue */
   max-width: 25rem;
-  color: #f4f1de;
+  color: #f0f5f9; /* Light blue */
   border-radius: 10px;
 }
 
@@ -65,7 +68,6 @@ li {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
-
 }
 
 #list-item {
@@ -75,11 +77,11 @@ li {
   margin: 0 2rem;
 }
 
-#details{
+#details {
   position: absolute;
   z-index: 3;
-  background-color: #81b29a;
-  color: #f4f1de;
+  background-color: #3d5a80; /* Medium blue */
+  color: #f0f5f9; /* Light blue */
   border-radius: 10px;
   font-size: 18px;
   margin-top: 1rem;
@@ -97,7 +99,7 @@ li {
 @media (max-width: 768px) {
   .charts-container {
     display: grid;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
   }
   #event-list {
     margin-top: 2rem;
