@@ -1,5 +1,5 @@
 //This is where both CitySearch and EventList will be rendered. This component will receive a click event from CitySearch when the user selects a new city. The events state will be updated in the App component and then passes the new list to EventList.
-
+//ownership verified
 
 import CitySearch from './components/CitySearch';
 import EventList from './components/EventList';
