@@ -10,8 +10,6 @@ import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
 import './App.css';
 
-
-
 const App = () => {
 
   const [events, setEvents] = useState([]); // create two new states: events and currentNOE
@@ -57,10 +55,10 @@ const App = () => {
      setCurrentNOE={setCurrentNOE}
      setErrorAlert={setErrorAlert}
      />
-     <CityEventsChart
+     {/*<CityEventsChart
      allLocations={allLocations}
      events={events}
-     />
+    />*/}
      <EventList
      events={events} //pass events state as prop to EventList
      /> 
