@@ -58,11 +58,13 @@ const App = () => {
      setErrorAlert={setErrorAlert}
      />
      <div className='charts-container'>
-      <EventGenresChart events={events} />
+      <EventGenresChart
+      events={events}
+      />
       <CityEventsChart
      allLocations={allLocations}
      events={events}
-    />
+    /> 
     </div>
      <EventList
      events={events} //pass events state as prop to EventList
