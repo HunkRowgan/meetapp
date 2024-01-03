@@ -55,10 +55,10 @@ const App = () => {
      setCurrentNOE={setCurrentNOE}
      setErrorAlert={setErrorAlert}
      />
-     {/*<CityEventsChart
+     <CityEventsChart
      allLocations={allLocations}
      events={events}
-    />*/}
+    />
      <EventList
      events={events} //pass events state as prop to EventList
      /> 
